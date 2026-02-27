@@ -3,8 +3,11 @@ return{
     "mason-org/mason-lspconfig.nvim",
     opts = {
         ensure_installed = {
-            "ts_ls"
-        }
+            "ts_ls",
+            "pyright"
+
+        },
+        automatic_installation = true,
     },
     dependencies = {
             { "mason-org/mason.nvim", opts = {} },
