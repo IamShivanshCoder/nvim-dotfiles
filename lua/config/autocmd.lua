@@ -35,3 +35,16 @@ vim.opt.autowriteall = true
 
 -- Confirm before closing modified buffers
 vim.opt.confirm = true
+
+vim.opt.foldcolumn = "1"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldenable = true
+-- This makes the symbols in the column look like thin arrows/lines
+vim.opt.fillchars = {
+	eob = " ",
+	fold = " ",
+	foldopen = "@",
+	foldsep = " ",
+	foldclose = ">",
+}
