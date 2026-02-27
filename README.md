@@ -2,7 +2,7 @@
 
 A blazing fast, lightweight Neovim configuration designed for efficiency and aesthetics. This setup balances a **minimal footprint (21 plugins)** with a full-featured IDE experience.
 
-![Neovim Dashboard](./27864.jpg)
+![Neovim Dashboard](./images/dashboard.jpg)
 
 ## ✨ Highlights
 
