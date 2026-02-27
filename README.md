@@ -1,42 +1,69 @@
-This is a great-looking setup! It’s clear you’ve leaned into the "less is more" philosophy while keeping all the heavy-hitting features. Here is a sleek, professional README.md for your Neovim configuration.
-🚀 Minimalist & Modern Neovim
-A blazing fast, lightweight Neovim configuration designed for efficiency and aesthetics. This setup balances a minimal footprint (21 plugins) with a full-featured IDE experience.
-✨ Highlights
- * ⚡ Lightweight: Only 21 carefully selected plugins to keep startup times near-instant.
- * 🎨 Aesthetics: Themed with Catppuccin for a soft, high-contrast coding environment.
- * 🧩 Modern UI: Featuring a custom ASCII dashboard via dashboard-nvim and floating windows.
- * 🔍 Power Searching: Full fuzzy finding and live grep integration with Telescope.
- * ⌨️ Discoverable: Keybindings are never forgotten thanks to which-key.nvim.
-🛠️ Features
-LSP & Development
- * Mason.nvim: Easily manage LSP servers, DAP servers, linters, and formatters.
- * Blink.cmp: Next-generation autocompletion that is faster and more stable than traditional engines.
- * Language Support: Out-of-the-box configuration for Python and JavaScript.
- * Code Folding: Advanced fold options to manage large files with ease.
-Workflow & Terminal
- * ToggleTerm: Integrated floating terminal for quick command execution without leaving the editor.
- * Which-Key: Interactive popup that suggests available keybindings as you type your leader key.
-📸 Screenshots
-Fuzzy Finding & Grep
-Search through your codebase with lightning speed using the integrated Telescope UI.
-Intuitive Keybindings
-The which-key integration organizes your workflow into logical groups like Buffers, Find, and LSP.
-Clean Code Architecture
-A look at the underlying Lua configuration, highlighting the clean syntax and organized keymapping.
-📦 Plugin Overview (Core)
-| Category | Plugin |
-|---|---|
-| Package Manager | lazy.nvim |
-| Completion | blink.cmp |
-| LSP | nvim-lspconfig, mason.nvim |
-| UI | dashboard-nvim, catppuccin |
-| Navigation | telescope.nvim |
-| Utility | which-key.nvim, toggleterm.nvim |
-🚀 Quick Start
- * Ensure you have Neovim 0.11.0+ installed.
- * Clone this repository to ~/.config/nvim.
- * Open Neovim; Lazy.nvim will automatically handle the installation of the 21 plugins.
- * Run :Mason to install any additional language servers you need.
-Have fun with Neovim! ⚡
-> Would you like me to help you write a specific init.lua or plugins.lua file to match this list exactly?
-> 
+# 🚀 Minimalist & Modern Neovim
+
+A blazing fast, lightweight Neovim configuration designed for efficiency and aesthetics. This setup balances a **minimal footprint (21 plugins)** with a full-featured IDE experience.
+
+![Neovim Dashboard](./27864.jpg)
+
+## ✨ Highlights
+
+* **⚡ Ultra Lightweight:** Only **21 carefully selected plugins** to keep startup times near-instant.
+* **🎨 Catppuccin Theme:** A soothing, high-contrast color palette for long coding sessions.
+* **🧩 Modern UI:** Featuring a custom ASCII dashboard via `dashboard-nvim`.
+* **🔍 Fuzzy Finding:** Full integration with `telescope.nvim` for files and live grep.
+* **⌨️ Discoverable:** Never forget a shortcut with `which-key.nvim` suggestions.
+
+---
+
+## 🛠️ Features
+
+### LSP & Development
+* **Mason.nvim:** Automated management for LSP servers, DAP, linters, and formatters.
+* **Blink.cmp:** Next-generation, high-performance autocompletion engine.
+* **Language Support:** Built-in support for **Python** and **JavaScript** out of the box.
+* **Code Folding:** Enhanced folding options for better codebase navigation.
+
+### Workflow & Terminal
+* **ToggleTerm:** Access a floating terminal instantly with a simple toggle.
+* **Fuzzy Finder:** Search through code and files using Telescope’s powerful UI.
+
+---
+
+## 📸 Screenshots
+
+### 🖥️ Dashboard & Interface
+The entry point to your workflow—clean, fast, and informative.
+![Dashboard Interface](./27864.jpg)
+
+### 🔍 Search & Discovery
+Fuzzy find and Live Grep across your entire project with a floating UI.
+![Telescope Live Grep](./27863.jpg)
+
+### ⌨️ Keybinding Hints
+Interactive `which-key` menus help you navigate your custom mappings effortlessly.
+![Which-Key Menu](./27861.jpg)
+
+### ⚙️ Clean Configuration
+A modular Lua-based config that is easy to read and extend.
+![Keymap Config](./27862.jpg)
+
+---
+
+## 📦 Core Plugin Stack
+
+| Category | Plugins |
+| :--- | :--- |
+| **Package Manager** | `lazy.nvim` |
+| **Completion** | `blink.cmp` |
+| **LSP / Tooling** | `nvim-lspconfig`, `mason.nvim` |
+| **UI / Theme** | `dashboard-nvim`, `catppuccin` |
+| **Navigation** | `telescope.nvim` |
+| **Utilities** | `which-key.nvim`, `toggleterm.nvim` |
+
+---
+
+## 🚀 Installation
+
+1. Ensure you have **Neovim 0.10+** installed.
+2. Clone this repository into your config folder:
+   ```bash
+   git clone https://github.com/IamShivanshCoder/nvim-dotfiles.git ~/.config/nvim
