@@ -36,3 +36,6 @@ vim.keymap.set(
 	":Telescope file_browser path=%:p:h select_buffer=true<CR>",
 	{ desc = "Explore in cwd" }
 )
+
+--Toggle  Term
+vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" })
