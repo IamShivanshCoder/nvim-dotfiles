@@ -32,19 +32,19 @@ A blazing fast, lightweight Neovim configuration designed for efficiency and aes
 
 ### 🖥️ Dashboard & Interface
 The entry point to your workflow—clean, fast, and informative.
-![Dashboard Interface](./27864.jpg)
+![Dashboard Interface](./images/dashboard.jpg)
 
 ### 🔍 Search & Discovery
 Fuzzy find and Live Grep across your entire project with a floating UI.
-![Telescope Live Grep](./27863.jpg)
+![Telescope Live Grep](./images/grep.jpg)
 
 ### ⌨️ Keybinding Hints
 Interactive `which-key` menus help you navigate your custom mappings effortlessly.
-![Which-Key Menu](./27861.jpg)
+![Which-Key Menu](./images/which-key.jpg)
 
 ### ⚙️ Clean Configuration
 A modular Lua-based config that is easy to read and extend.
-![Keymap Config](./27862.jpg)
+![Keymap Config](./images/fold.jpg)
 
 ---
 
