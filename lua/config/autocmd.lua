@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("oldworld")
 
 -- Tab Configs
 vim.cmd("set expandtab")
