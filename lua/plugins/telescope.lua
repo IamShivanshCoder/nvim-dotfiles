@@ -19,6 +19,11 @@ return {
 								-- the default case_mode is "smart_case"
 							},
 						},
+						defaults = {
+							file_ignore_patterns = {
+								"node_modules",
+							},
+						},
 					})
 
 					require("telescope").load_extension("fzf")
