@@ -9,7 +9,7 @@ return {
 			lua = { "stylua" },
 		},
 		default_format_options = {
-			timeout_ms = 5000, -- increase from default 1000ms
+			timeout_ms = 10000, -- increase from default 1000ms
 		},
 	},
 }
