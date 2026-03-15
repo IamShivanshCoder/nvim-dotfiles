@@ -1,17 +1,25 @@
-return{
-    {
-    "mason-org/mason-lspconfig.nvim",
-    opts = {
-        ensure_installed = {
-            "ts_ls",
-            "pyright"
+vim.lsp.enable({
+	"clangd",
+})
 
-        },
-        automatic_installation = true,
-    },
-    dependencies = {
-            { "mason-org/mason.nvim", opts = {} },
-            "neovim/nvim-lspconfig",
-        },
-    }
+return {
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {
+			ensure_installed = {
+				"ts_ls",
+				"pyright",
+			},
+			automatic_installation = true,
+			servers = {
+				clangd = { mason = false },
+			},
+		},
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			{
+				"neovim/nvim-lspconfig",
+			},
+		},
+	},
 }
