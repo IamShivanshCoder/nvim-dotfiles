@@ -7,6 +7,7 @@ return {
 			html = { "prettier" },
 			css = { "prettier" },
 			lua = { "stylua" },
+			c = { "clang-format" },
 		},
 		default_format_options = {
 			timeout_ms = 10000, -- increase from default 1000ms
