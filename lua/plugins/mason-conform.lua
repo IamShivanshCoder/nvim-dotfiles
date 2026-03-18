@@ -15,6 +15,14 @@ return {
 			},
 			ignore_install = { "stylua" },
 			automatic_installation = true,
+			formatters = {
+				["clang-format"] = {
+					-- This overrides the default arguments
+					prepend_args = {
+						"-style={BasedOnStyle: llvm, AlignAfterOpenBracket: DontAlign, IndentWidth: 4}",
+					},
+				},
+			},
 		})
 	end,
 }

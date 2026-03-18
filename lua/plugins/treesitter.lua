@@ -102,6 +102,10 @@ return {
 		},
 		opts = {
 			multiwindow = true,
+			enable = false,
+			max_lines = 3,
+			mode = "cursor",
+			line_numbers = true,
 		},
 	},
 }
