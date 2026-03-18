@@ -9,19 +9,11 @@ return {
 		---@module 'blink.cmp'
 		---@type blink.cmp.Config
 		opts = {
-
 			keymap = { preset = "enter" },
-
-			appearance = {
-				-- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
-				-- Adjusts spacing to ensure icons are aligned
-				nerd_font_variant = "mono",
-			},
-
-			-- (Default) Only show the documentation popup when manually triggered
+			-- Inside your blink.cmp setup
 			completion = {
 				menu = {
-					border = "rounded",
+					border = "single", -- Match the sharp 'single' border in the photo
 					draw = {
 						columns = {
 							{ "label", "label_description", gap = 1 },
@@ -29,6 +21,8 @@ return {
 						},
 					},
 				},
+				-- This enables the "ghost text" preview seen in the line 31 of your image
+				ghost_text = { enabled = true },
 				documentation = {
 					auto_show = true,
 					window = {
@@ -37,19 +31,12 @@ return {
 				},
 			},
 
-			-- Default list of enabled providers defined so that you can extend it
-			-- elsewhere in your config, without redefining it, due to `opts_extend`
-			sources = {
-				default = { "lsp", "path", "snippets", "buffer" },
+			-- Match the documentation window style
+			appearance = {
+				highlight_ns = vim.api.nvim_create_namespace("blink_cmp"),
 			},
 
-			-- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
-			-- You may use a lua implementation instead by using `implementation = "lua"` or fallback to the lua implementation,
-			-- when the Rust fuzzy matcher is not available, by using `implementation = "prefer_rust"`
-			--
-			-- See the fuzzy documentation for more information
-			fuzzy = { implementation = "prefer_rust_with_warning" },
+			signature = { enabled = true },
 		},
-		opts_extend = { "sources.default" },
 	},
 }
