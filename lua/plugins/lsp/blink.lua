@@ -36,7 +36,16 @@ return {
 				highlight_ns = vim.api.nvim_create_namespace("blink_cmp"),
 			},
 
-			signature = { enabled = true },
+			signature = {
+				enabled = true,
+				window = {
+
+					show_documentation = false,
+					border = "rounded",
+					direction_priority = { "s", "n" },
+					winblend = 20,
+				},
+			},
 		},
 	},
 }
