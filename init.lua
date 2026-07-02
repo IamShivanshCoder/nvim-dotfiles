@@ -1,3 +1,6 @@
+vim.pack.add({ 'https://github.com/vague-theme/vague.nvim' })
+vim.cmd.colorscheme('vague')
+
 require("core.options")
 require("core.keymaps")
 require("core.autocmds")
@@ -7,4 +10,3 @@ require("plugins.ui")
 require("plugins.mini")
 require("plugins.conform")
 require("plugins.goodies")
-vim.cmd.colorscheme("catppuccin-mocha")
