@@ -13,7 +13,18 @@ require("fzf-lua").setup({
 		},
 	},
 })
-
+require('fzf-lua').setup({
+  -- Turn off Tree-sitter highlighting inside the fzf result list
+  winopts = {
+    treesitter = false, 
+  },
+  -- (Optional) If you also want to keep the external CLI previewer we set earlier
+  previewers = {
+    builtin = {
+      treesitter = { enabled = false },
+    },
+  },
+})
 local fzf = require("fzf-lua")
 local k = vim.keymap.set
 
