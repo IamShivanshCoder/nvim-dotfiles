@@ -1,6 +1,9 @@
-vim.pack.add({ 'https://github.com/vague-theme/vague.nvim' })
-vim.cmd.colorscheme('vague')
 
+vim.pack.add({
+  "https://github.com/vossenwout/guts.nvim",
+})
+vim.pack.add({ "https://github.com/blazkowolf/gruber-darker.nvim" })
+vim.cmd.colorscheme("gruber-darker")
 require("core.options")
 require("core.keymaps")
 require("core.autocmds")
