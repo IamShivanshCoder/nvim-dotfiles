@@ -23,7 +23,8 @@ require("conform").setup({
 			args = { "-i", "4" }, -- 4 space indent
 		},
 		clang_format = {
-			args = { "--style=file", "--fallback-style=Google" },
+			args = { "--style=file", "--fallback-style=Google","--style={IndentWidth: 4}"},
+            prepend_args = { "--style={IndentWidth: 8}" },
 		},
 		black = {
 			args = { "--line-length", "88", "-" },
